@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="./script.js" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Fintech Bank</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="nav-bar"></div>
+      <nav class="translate-nav">
+        <div class="user-name">
+          <p>Welcome</p>
+          <button class="close-bar">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="login-box2">
+          <input type="text" class="username" placeholder="Username" />
+          <input
+            type="password"
+            name=""
+            id="password--id"
+            placeholder="password"
+            class="password"
+            max="4"
+          />
+          <button class="login">Login</button>
+          <div class="wrong-password"></div>
+        </div>
+
+        <div class="nav-link none-display">
+          <a href="#"><i class="fa-solid fa-bars"></i>Dashboard</a>
+
+          <a href="#"><i class="fa-solid fa-arrows-spin"></i>Transaction</a>
+          <a href="#"><i class="fa-solid fa-paper-plane"></i>Message</a>
+          <a href="#"><i class="fa-solid fa-user"></i>Profile</a>
+          <a href="#"><i class="fa-solid fa-credit-card"></i>Payments</a>
+          <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+          <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+        </div>
+      </nav>
+      <main>
+        <div class="stickyBAr-header">
+          <h4>Banking</h4>
+
+          <div class="bar">
+            <button class="menu-bar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="welcome-bal">
+          <div class="name-date">
+            <!-- welcome -->
+            <div class="name-welc">Login to get started</div>
+            <!-- date -->
+            <div class="date">12/12/2022</div>
+          </div>
+          <!-- login -->
+
+          <div class="login-box">
+            <input type="text" class="username" placeholder="Username" />
+            <input
+              type="password"
+              name=""
+              id="password--id"
+              placeholder="password"
+              class="password"
+              max="4"
+            />
+            <button class="login">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <div class="wrong-password"></div>
+          </div>
+
+          <!-- savings -bal--- showbalance -->
+
+          <div class="sav-bal none-display">
+            <small class="sav">Savings</small>
+            <div class="balance">#20,000</div>
+
+            <button class="show-bal">
+              <i class="fa-solid fa-eye-slash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="visible">
+          <!-- vsisble part -->
+          <div class="banking">
+            <!-- transfer -->
+            <div class="transfer trn">
+              <h4>Transfer</h4>
+
+              <label for="receiver">Reciever</label> <br />
+              <input type="text" class="receievr" />
+              <br />
+              <br />
+              <label for="trf-amount">Amount</label> <br />
+              <input type="number" class="trf-amount" />
+
+              <button class="transfer-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <!-- loan -->
+            <div class="Loan trn">
+              <h4>Loan</h4>
+
+              <label for="loan-amount">Amount</label> <br />
+              <input type="number" class="loan-amount" />
+
+              <button class="loan-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <!-- close -->
+            <div class="close-account trn">
+              <h4>Close account</h4>
+
+              <label for="close-password">Password</label> <br />
+              <input type="password" class="close-password" />
+
+              <button class="close">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="history-summary">
+            <div class="history">
+              <div class="movement-row">
+                <div class="transaction-pill deposit">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill withdrawal">withdrawal</div>
+                <div class="transaction-date">12/12/2022</div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+            </div>
+            <div class="summary">
+              <div class="income-total tot">Total Income : 0000</div>
+              <div class="Withdraw-total tot">Total withdraw : 0000</div>
+              <div class="Interest tot">Interest : 0000</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
