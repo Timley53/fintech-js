@@ -259,7 +259,7 @@ login.addEventListener("click", function (e) {
       console.log("successful login");
       noneDisplay.style.opacity = "1";
       mainVisible.style.opacity = "1";
-      savBal.classList.toggle("none-display");
+      savBal.classList.remove("none-display");
       nameWelc.textContent = `${currentAccount.owner.split(" ")[1]}`;
       history.textContent = "";
 
