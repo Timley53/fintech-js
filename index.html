@@ -30,16 +30,16 @@
         </div>
 
         <div class="login-box2">
-          <input type="text" class="username" placeholder="Username" />
+          <input type="text" class="username2" placeholder="Username" />
           <input
             type="password"
             name=""
             id="password--id"
             placeholder="password"
-            class="password"
+            class="password2"
             max="4"
           />
-          <button class="login">Login</button>
+          <button class="login2">Login</button>
           <div class="wrong-password"></div>
         </div>
 
@@ -79,10 +79,10 @@
             <input
               type="password"
               name=""
-              id="password--id"
+              id="password--id1"
               placeholder="password"
               class="password"
-              max="4"
+              maxlength="4"
             />
             <button class="login">
               <i class="fa-solid fa-arrow-right"></i>
@@ -94,7 +94,7 @@
 
           <div class="sav-bal none-display">
             <small class="sav">Savings</small>
-            <div class="balance">#20,000</div>
+            <div class="balance">****</div>
 
             <button class="show-bal">
               <i class="fa-solid fa-eye-slash"></i>
@@ -119,6 +119,8 @@
               <button class="transfer-btn">
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
+
+              <div class="successtrf"></div>
             </div>
             <!-- loan -->
             <div class="Loan trn">
@@ -130,15 +132,30 @@
               <button class="loan-btn">
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
+              <div class="successloan"></div>
             </div>
             <!-- close -->
             <div class="close-account trn">
-              <h4>Close account</h4>
+              <h4>Purchase airtime</h4>
 
-              <label for="close-password">Password</label> <br />
-              <input type="password" class="close-password" />
+              <label for="close-password">Network-provider</label> <br />
 
-              <button class="close">
+              <select name="airtime" id="airtime" class="airtime">
+                <option value="placeholder">Select Service</option>
+                <option value="MTN">MTN</option>
+                <option value="glo">Glo</option>
+                <option value="airtel">Airtel</option>
+                <option value="9mobile">9mobile</option>
+              </select>
+              <br />
+
+              <input
+                type="number"
+                class="airtime-amount"
+                placeholder="Amount"
+              />
+
+              <button class="airtime-btn">
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
@@ -147,7 +164,19 @@
           <div class="history-summary">
             <div class="history">
               <div class="movement-row">
-                <div class="transaction-pill deposit">withdrawal</div>
+                <div class="transaction-pill deposit">
+                  withdrawal <br />
+                  <div class="aitime-service">Mtn</div>
+                </div>
+                <div class="transaction-date">
+                  12/12/2022
+                  <br />
+                  <!-- <div class="aitime-service"></div> -->
+                </div>
+                <div class="transaction-amount">#40,000</div>
+              </div>
+              <div class="movement-row">
+                <div class="transaction-pill airtimebg">withdrawal</div>
                 <div class="transaction-date">12/12/2022</div>
                 <div class="transaction-amount">#40,000</div>
               </div>
@@ -156,41 +185,7 @@
                 <div class="transaction-date">12/12/2022</div>
                 <div class="transaction-amount">#40,000</div>
               </div>
-              <div class="movement-row">
-                <div class="transaction-pill withdrawal">withdrawal</div>
-                <div class="transaction-date">12/12/2022</div>
-                <div class="transaction-amount">#40,000</div>
-              </div>
-              <div class="movement-row">
-                <div class="transaction-pill withdrawal">withdrawal</div>
-                <div class="transaction-date">12/12/2022</div>
-                <div class="transaction-amount">#40,000</div>
-              </div>
-              <div class="movement-row">
-                <div class="transaction-pill withdrawal">withdrawal</div>
-                <div class="transaction-date">12/12/2022</div>
-                <div class="transaction-amount">#40,000</div>
-              </div>
-              <div class="movement-row">
-                <div class="transaction-pill withdrawal">withdrawal</div>
-                <div class="transaction-date">12/12/2022</div>
-                <div class="transaction-amount">#40,000</div>
-              </div>
-              <div class="movement-row">
-                <div class="transaction-pill withdrawal">withdrawal</div>
-                <div class="transaction-date">12/12/2022</div>
-                <div class="transaction-amount">#40,000</div>
-              </div>
-              <div class="movement-row">
-                <div class="transaction-pill withdrawal">withdrawal</div>
-                <div class="transaction-date">12/12/2022</div>
-                <div class="transaction-amount">#40,000</div>
-              </div>
-              <div class="movement-row">
-                <div class="transaction-pill withdrawal">withdrawal</div>
-                <div class="transaction-date">12/12/2022</div>
-                <div class="transaction-amount">#40,000</div>
-              </div>
+
               <div class="movement-row">
                 <div class="transaction-pill withdrawal">withdrawal</div>
                 <div class="transaction-date">12/12/2022</div>
